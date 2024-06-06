@@ -12,6 +12,12 @@ document.querySelector('#search').addEventListener('submit', async (event) => {
 
     const results = await fetch(apiUrl)
     const json = await results.json()
+
+    if(json.cod === 200){
+
+    } else{
+        showAlert('Não foi possível localizar...')
+    }
 })
 
 function showAlert(msg){
