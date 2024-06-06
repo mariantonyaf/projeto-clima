@@ -23,7 +23,7 @@ document.querySelector('#search').addEventListener('submit', async (event) => {
             description: json.weather[0],description,
             tempIcon: json.weather[0],icon,
             windSpeed: json.wind.speed,
-            humidity: json.main.humidity,
+            humidity: json.main.humidity
         })
     } else{
         showAlert('Não foi possível localizar...')
@@ -31,6 +31,9 @@ document.querySelector('#search').addEventListener('submit', async (event) => {
 })
 
 function showInfo(json){
+    showAlert('')
+
+    document.querySelector('#weather').classList.add('show')
 
 }
 
