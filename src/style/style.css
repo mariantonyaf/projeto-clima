@@ -15,3 +15,78 @@ body{
     min-height: 100vh;
     background: linear-gradient(#3b82f6, #4a7dff);
 }
+
+#container{
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 12px;
+}
+
+#search input{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+
+#search input:focus-visible{
+    outline: none;
+}
+
+#search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#weather{
+    display: none;
+    margin-top: 20px;
+}
+
+#weather.show{
+    display: block;
+}
+
+#weather #title{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #372f3f;
+}
+
+#temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(#5a7cdc, #606dde);
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#temp_img{
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .1));
+}
+
+#temp_value{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+#temp_description{
+    font-weight: 500;
+    text-transform: capitalize;
+}
